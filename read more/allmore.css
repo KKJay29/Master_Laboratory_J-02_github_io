@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    width: 100%;
+    min-height: 10vh;
+    background-color: #aa56b7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #2a064e;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav li a {
+    margin: 0px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+
+.nav li a:hover {
+    color: #2a064e;
+}
+
+.page {
+    /* height: 25vh; */
+    width: 90vw;
+    background-color: #f8d0ff;
+    margin: 40px auto;
+    padding: 2.5rem 5rem;
+}
+
+.page h1 {
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #34013c;
+    margin-bottom: 3rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pic img {
+    width: 21pc;
+    height: 34pc;
+}
+
+.point {
+    width: 40%;
+}
+
+.point h1 {
+    color: #9c27b0;
+    font-family: system-ui;
+}
+
+.point p {
+    margin-top: 20px;
+}
+
+.pont {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+#btn {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#btn button {
+    padding: 10px;
+    background-color: #de60f3;
+    border: 2px solid #700d81;
+    transition: all 0.4s ease;
+}
+
+#btn button:hover {
+    background-color: #eda7f9;
+    cursor: pointer;
+}
+
+.pera {
+    width: 51%;
+    font-size: 18px;
+    font-family: math;
+}
+
+.text {
+    text-align: center;
+    margin: 40px 50px;
+}
+
+#ftr {
+    background-color: #aa56b7;
+    margin-top: 4rem;
+    min-height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 22px;
+}
+
+.ftr-1 i {
+    margin: 0px 11px;
+    cursor: pointer;
+    color: black;
+    font-size: 22px;
+}
+
+#barsbtn {
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    z-index: 2;
+}
+
+#icon {
+    display: none;
+}
+
+.logo2 a {
+    display: none;
+    text-decoration: none;
+}
+
+.npic img {
+    display: none;
+}
+
+@media only screen and (max-width:842px) {
+    .pspan {
+        display: none;
+    }
+
+    .pont {
+        margin-left: 20px;
+        flex-direction: column;
+    }
+
+    .none {
+        display: none;
+    }
+
+    #btn {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .pera {
+        width: auto;
+        margin-top: 17px;
+    }
+}
+
+@media only screen and (max-width:730px) {
+    .logo {
+        margin-top: 20px;
+    }
+
+    #navbar {
+        position: absolute;
+        top: 0;
+        flex-direction: column;
+        z-index: 1;
+        transition: all 0.5s ease-in;
+        transform: translate(0px, -350px);
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .nav li {
+        margin-top: 16px;
+    }
+
+    #icon {
+        display: block;
+    }
+
+    .logo2 a {
+        font-size: 30px;
+        font-family: sans-serif;
+        color: #2a064e;
+        cursor: pointer;
+        text-align: center;
+        margin: 20px auto;
+        display: table;
+        border-bottom: 2px solid #673ab7;
+        padding-bottom: 8px;
+    }
+
+    .page {
+        margin: 2.5rem auto;
+    }
+
+    .pic img {
+        width: 17pc;
+        height: 29pc;
+    }
+
+    /* .info {
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .point img {
+        width: 27pc;
+    }
+
+    .point {
+        text-align: center;
+        width: 27rem;
+        margin-bottom: 2rem;
+    } */
+
+    #ftr {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .npic img {
+        display: block;
+        width: 75vw;
+        margin: auto;
+    }
+
+    #ftr {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo2 a {
+        margin: 20px;
+    }
+
+    .page {
+        padding: 3rem 0rem;
+    }
+
+    .page h1 {
+        text-align: center;
+    }
+
+    .info {
+        justify-content: center;
+    }
+
+    .pic img {
+        display: none;
+    }
+
+    .point {
+        width: auto;
+        margin: 2.5rem 23px;
+    }
+
+    .text {
+        text-align: center;
+        margin: 5px 30px;
+    }
+}
+
+@media only screen and (max-width:410px) {
+    .text {
+        margin: 5px 18px;
+    }
+}

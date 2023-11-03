@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    /* width: 98.3vw; */
+    width: 100%;
+    min-height: 10vh;
+    background-color: #aa56b7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #2a064e;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav li a {
+    margin: 0px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+
+.nav li a:hover {
+    color: #2a064e;
+}
+
+#page {
+    background-color: #efdff1;
+    width: 98vw;
+    height: 50vh;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pic img {
+    width: 8pc;
+    margin-bottom: 23px;
+}
+
+.heading {
+    font-family: sans-serif;
+    color: #380540;
+}
+
+.point {
+    margin: 65px 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.info h1 {
+    font-size: 70px;
+    font-family: fantasy;
+    color: #a653b5;
+}
+
+.info h3 {
+    font-family: sans-serif;
+    color: #3f0948;
+}
+
+.point p {
+    width: 43vw;
+    color: #3a3a3a;
+}
+
+.botam-border {
+    width: 93vw;
+    border-bottom: 2px solid #d500f9;
+    margin: -5px auto;
+}
+
+.up-page {
+    background-color: #a653b5;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.up-page a {
+    text-decoration: none;
+    color: #3b0544;
+    font-family: math;
+}
+
+#ftr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px 25px 10px 25px;
+}
+
+.ftr-1 i {
+    margin: 0px 11px;
+    cursor: pointer;
+    color: black;
+    font-size: 22px;
+}
+
+#barsbtn {
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    z-index: 2;
+}
+
+#icon {
+    display: none;
+}
+
+.logo2 {
+    display: none;
+}
+
+@media only screen and (max-width:730px) {
+    .logo {
+        margin-top: 20px;
+    }
+
+    #navbar {
+        position: absolute;
+        top: 0;
+        flex-direction: column;
+        z-index: 1;
+        transition: all 0.5s ease-in;
+        transform: translate(0px, -350px);
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .nav li {
+        margin-top: 16px;
+    }
+
+    #icon {
+        display: block;
+    }
+
+    .logo2 {
+        font-size: 30px;
+        font-family: sans-serif;
+        color: #2a064e;
+        cursor: pointer;
+        text-align: center;
+        margin: 20px auto;
+        display: table;
+        border-bottom: 2px solid #673ab7;
+        padding-bottom: 8px;
+    }
+
+    #page {
+        height: 40vh;
+    }
+
+    .point {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info h1 {
+        font-size: 61px;
+    }
+
+    .point p {
+        padding: 25px 50px;
+        width: fit-content;
+    }
+
+    #ftr {
+        flex-direction: column;
+    }
+
+    .ftr-1 {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:410px) {
+    .logo2 {
+        margin: 20px;
+    }
+
+    .heading h1 {
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .point {
+        margin: 15px 0;
+    }
+
+    .info h1 {
+        font-size: 45px;
+    }
+
+    .point p {
+        padding: 25px 20px;
+    }
+
+    .info h3 {
+        padding: 0 10px;
+    }
+
+}
